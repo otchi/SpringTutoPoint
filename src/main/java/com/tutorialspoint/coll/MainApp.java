@@ -5,7 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 	 public static void main(String[] args) {
-	      ApplicationContext context = 
+	      @SuppressWarnings("resource")
+		ApplicationContext context = 
 	             new ClassPathXmlApplicationContext("BeansColl.xml");
 
 	      JavaCollection jc=(JavaCollection)context.getBean("javaCollection");

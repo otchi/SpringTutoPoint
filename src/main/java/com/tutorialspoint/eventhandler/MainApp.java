@@ -4,6 +4,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = 
 				new ClassPathXmlApplicationContext("BeansEvent.xml");

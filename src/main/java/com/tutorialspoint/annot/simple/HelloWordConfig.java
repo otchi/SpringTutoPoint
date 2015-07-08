@@ -16,7 +16,8 @@ public class HelloWordConfig {
 	/*----------------------------------------------------------------------*/
 	
 	public static void main(String[] args) {
-		   ApplicationContext ctx = 
+		   @SuppressWarnings("resource")
+		ApplicationContext ctx = 
 		   new AnnotationConfigApplicationContext(HelloWordConfig.class);
 		   
 		   HelloWorld helloWorld = ctx.getBean(HelloWorld.class);

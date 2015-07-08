@@ -5,7 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 	  public static void main(String[] args) {
-		  AbstractApplicationContext context = 
+		  @SuppressWarnings("resource")
+		AbstractApplicationContext context = 
 	             new ClassPathXmlApplicationContext("BeansHW.xml");
 
 	      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
